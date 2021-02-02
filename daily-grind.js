@@ -67,6 +67,60 @@ switch(myDay){
 
         };
     break;
+    case 3:
+        today = "Wensaday";
+        coffee={
+            color:"brown",
+            name:"Drip",
+            pic:"images/drip.jpg",
+            alt:"a picture of drip coffee",
+            day:"Tuesday",
+            desc:`I like me some drip`
+
+
+        };
+    break;
+    case 3:
+        today = "Tuesday";
+        coffee={
+            color:"brown",
+            name:"Drip",
+            pic:"images/drip.jpg",
+            alt:"a picture of drip coffee",
+            day:"Tuesday",
+            desc:`I like me some drip`
+
+
+        };
+    break;
+
+    case 4:
+        today = "Thuesday";
+        coffee={
+            color:"brown",
+            name:"caramel-tea",
+            pic:"images/care.jpg",
+            alt:"a picture of drip coffee",
+            day:"Thuesday",
+            desc:`I like me some drip`
+
+
+        };
+    break;
+
+    case 5:
+        today = "Friday";
+        coffee={
+            color:"Green",
+            name:"Cappuccino",
+            pic:"images/Cappuccino.jpg",
+            alt:"Friday",
+            desc:`I like me some Cappuccino`
+
+
+        };
+    break;
+
 
 
 }  
