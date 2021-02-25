@@ -40,7 +40,7 @@ switch(myDay) {
             name: "espresso con panna",
             pic: "images/panna.jpg",
             alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
-            color: "plum",
+            color: ""#FF7518",
             desc: `.<br>Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
             day: "Sunday"
         };
@@ -61,9 +61,9 @@ switch(myDay) {
     case 2:
         today = "Tuesday";
         coffee = {
-            name: "milky way cappuccino",
-            pic: "images/milky-way.jpg",
-            alt: "A milky way cappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
+            name: "milky way frapppaccino",
+            pic: "images/frappaccino.jpg",
+            alt: "A milky way fappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
             color: "cornflowerblue",
             desc: `.<br>Our milky way cappuccino is to die for. Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
             day: "Tuesday"
@@ -86,7 +86,7 @@ switch(myDay) {
         today = "Thursday";
         coffee = {
             name: "mocha",
-            pic: "images/mocha.png",
+            pic: "images/mocha.jpg",
             alt: "A picture of a mocha in a white ceramic coffee cup.",
             color: "violet",
             desc: `.<br>Our mochas are made with the finest dark cocoa powder and topped with a dash of whipped cream and a milk chocolate drizzle that we make ourselves right here in the shop.<br>If you'd like to add a bit of a kick, ask for our Mexican mocha, which has chili powder added to it!`,
@@ -97,11 +97,11 @@ switch(myDay) {
     case 5:
         today = "Friday";
         coffee = {
-            name: "caffè macchiato",
-            pic: "images/macchiato.jpg",
-            alt: "A picture of a macchiato, an espresso shot with steamed milk in a small glass cup.",
+            name: "cold-brew",
+            pic: "images/cold-brew.jpg",
+            alt: "A picture of a old-brew, an espresso shot with steamed milk in a small glass cup.",
             color: "peachpuff",
-            desc: `.<br>Our caffè macchiato is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
+            desc: `.<br>Our cold-brew is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
             day: "Friday"
         };
         break;
@@ -109,11 +109,11 @@ switch(myDay) {
     case 6:
         today = "Saturday";
         coffee = {
-            name: "lavender latte",
-            pic: "images/lavender-latte.jpg",
-            alt: "A lavender latte in a white ceramic cup, sprinkled with dried lavender.",
+            name: "bubble-tea",
+            pic: "images/bubble-tea.jpg",
+            alt: "A bubble-tea latte in a white ceramic cup,.",
             color: "silver",
-            desc: `.<br>We know, it's an unusual one! But we find the lavender latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
+            desc: `.<br>We know, it's an unusual one! But we find the bubble-tea latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
             day: "Saturday"
         };
         break;
