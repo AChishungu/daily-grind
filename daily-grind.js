@@ -40,7 +40,7 @@ switch(myDay) {
             name: "espresso con panna",
             pic: "images/panna.jpg",
             alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
-            color: ""#FF7518",
+            color: "#FF7518",
             desc: `.<br>Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
             day: "Sunday"
         };
@@ -64,7 +64,7 @@ switch(myDay) {
             name: "milky way frapppaccino",
             pic: "images/frappaccino.jpg",
             alt: "A milky way fappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
-            color: "cornflowerblue",
+            color: "blue",
             desc: `.<br>Our milky way cappuccino is to die for. Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
             day: "Tuesday"
         };
@@ -76,7 +76,7 @@ switch(myDay) {
             name: "drip coffee",
             pic: "images/drip.jpg",
             alt: "A picture of a drip coffee.",
-            color: "burlywood",
+            color: "green",
             desc: `.<br>Made with natural spring water boiled and then slowly poured over finely ground coffee beans. With a strong, bold flavor, we're sure you're going to love it!<br>Our drip coffee is usually made with dark roasted coffee beans, but medium roast and light roast are available on request!`,
             day: "Wednesday"
         };
