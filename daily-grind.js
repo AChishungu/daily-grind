@@ -1,130 +1,128 @@
-/* 
-here is the information we'll need to change for each coffee 
-image src
-alt tag
-day of week 
-name of coffee 
-color 
-description*/
-
-
-
+/* things we need to change for each coffee:
+name - name of coffee
+pic - image source
+alt - alt tag
+color - color
+desc - description
+day - day of the week */
 
 let myDate = new Date();
 let myDay = "";
 let today = "";
-let coffee = "",
+let coffee = "";
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
-if (urlParams.has('day')){ // if there is data on the QuaeryString use query string data if there is not a data use the ob
- myDay = urlParams.get('day');
+if(urlParams.has('day')) {
+    myDay = urlParams.get('day');
 }
-else{
-     myDay = myDate.getDay();
+else {
+    myDay = myDate.getDay();
 }
 
+myDay = parseInt(myDay);
 
-myDay=parseInt(myDay);
-function coffeeTemplate(coffee){
+function coffeeTemplate(coffee) {
     let myReturn = "";
-
     myReturn += `<p>
-    <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
-    <strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily ${coffee.pic} special is <strong class="feature">Pumpkin Spice Latte</strong>, 
-    which makes us wish it was always Fall, as this is one of our top sellers!</p>
-    `;
-
- return myReturn;
+                    <img src="${coffee.pic}" alt="${coffee.alt}" id="coffee"/>
+                    <strong class="feature">${coffee.day}'s Coffee Special:</strong><br> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>${coffee.desc}
+                </p>`;
+    return myReturn;
 }
 
 
-switch(myDay){
+
+switch(myDay) {
+    case 0:
+        today = "Sunday";
+        coffee = {
+            name: "espresso con panna",
+            pic: "images/panna.jpg",
+            alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
+            color: "plum",
+            desc: `.<br>Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
+            day: "Sunday"
+        };
+        break;
+
     case 1:
         today = "Monday";
         coffee = {
-            color:"pink",
-            name:"Bubble Tea",
-            pic:"images/bubble-tea.jpg",
-            alt:"a picture of bubble tea",
-            day:"Monday",
-            desc:`I some bubble tea`
-
-
+            name: "pumpkin spice latte",
+            pic: "images/pumpkin-spice-latte.jpg",
+            alt: "A picture of a pumpkin spice latte in an orange ceramic mug.",
+            color: "#FF7518",
+            desc: `.<br>Our pumpkin spice latte makes us wish it was always fall, as this is one of our top sellers! Made with cinnamon, nutmeg, ground clove, just a touch of pumpkin puree, and (of course) sugar, this is sure to be the best pumpkin spice latte you've ever tasted!`,
+            day: "Monday"
         };
-    break;
-    
+        break;
+
     case 2:
         today = "Tuesday";
-        coffee={
-            color:"brown",
-            name:"Drip",
-            pic:"images/drip.jpg",
-            alt:"a picture of drip coffee",
-            day:"Tuesday",
-            desc:`I like me some drip`
-
-
+        coffee = {
+            name: "milky way cappuccino",
+            pic: "images/milky-way.jpg",
+            alt: "A milky way cappuccino in a white ceramic cup with an intricate flower-like design in caramel and chocolate on the top.",
+            color: "cornflowerblue",
+            desc: `.<br>Our milky way cappuccino is to die for. Made with milk chocolate, caramel, and topped with whipped cream and swirls of milk chocolate and caramel syrups in an intricate pattern, this drink is heaven in a cup!<br>The milky way is also available as a latte, if that's more your style.`,
+            day: "Tuesday"
         };
-    break;
+        break;
+
     case 3:
-        today = "Wensaday";
-        coffee={
-            color:"brown",
-            name:"Drip",
-            pic:"images/drip.jpg",
-            alt:"a picture of drip coffee",
-            day:"Tuesday",
-            desc:`I like me some drip`
-
-
+        today = "Wednesday";
+        coffee = {
+            name: "drip coffee",
+            pic: "images/drip.jpg",
+            alt: "A picture of a drip coffee.",
+            color: "burlywood",
+            desc: `.<br>Made with natural spring water boiled and then slowly poured over finely ground coffee beans. With a strong, bold flavor, we're sure you're going to love it!<br>Our drip coffee is usually made with dark roasted coffee beans, but medium roast and light roast are available on request!`,
+            day: "Wednesday"
         };
-    break;
-    case 3:
-        today = "Tuesday";
-        coffee={
-            color:"brown",
-            name:"Drip",
-            pic:"images/drip.jpg",
-            alt:"a picture of drip coffee",
-            day:"Tuesday",
-            desc:`I like me some drip`
-
-
-        };
-    break;
+        break;
 
     case 4:
-        today = "Thuesday";
-        coffee={
-            color:"brown",
-            name:"caramel-tea",
-            pic:"images/care.jpg",
-            alt:"a picture of drip coffee",
-            day:"Thuesday",
-            desc:`I like me some drip`
-
-
+        today = "Thursday";
+        coffee = {
+            name: "mocha",
+            pic: "images/mocha.png",
+            alt: "A picture of a mocha in a white ceramic coffee cup.",
+            color: "violet",
+            desc: `.<br>Our mochas are made with the finest dark cocoa powder and topped with a dash of whipped cream and a milk chocolate drizzle that we make ourselves right here in the shop.<br>If you'd like to add a bit of a kick, ask for our Mexican mocha, which has chili powder added to it!`,
+            day: "Thursday"
         };
-    break;
-
+        break;
+    
     case 5:
         today = "Friday";
-        coffee={
-            color:"Green",
-            name:"Cappuccino",
-            pic:"images/Cappuccino.jpg",
-            alt:"Friday",
-            desc:`I like me some Cappuccino`
-
-
+        coffee = {
+            name: "caffè macchiato",
+            pic: "images/macchiato.jpg",
+            alt: "A picture of a macchiato, an espresso shot with steamed milk in a small glass cup.",
+            color: "peachpuff",
+            desc: `.<br>Our caffè macchiato is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
+            day: "Friday"
         };
-    break;
+        break;
 
+    case 6:
+        today = "Saturday";
+        coffee = {
+            name: "lavender latte",
+            pic: "images/lavender-latte.jpg",
+            alt: "A lavender latte in a white ceramic cup, sprinkled with dried lavender.",
+            color: "silver",
+            desc: `.<br>We know, it's an unusual one! But we find the lavender latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
+            day: "Saturday"
+        };
+        break;
+   
+}
 
+console.log(coffee);
 
-}  
- console.log(coffee);
- document.getElementById("coffee-output").innerHML= coffeeTemplate(coffee);
- document.getElementsByName("HTML")[0].style.backgroundColor=coffee.color;
- document.getElementById("coffee-highlight").systle.color=coffee.color;
+document.getElementById("coffee-output").innerHTML = coffeeTemplate(coffee);
+document.getElementsByClassName("feature")[0].style.color = coffee.color;
+document.getElementsByClassName("feature")[1].style.color = coffee.color;
+document.styleSheets[1].cssRules[0].style.setProperty("background-color", coffee.color);
