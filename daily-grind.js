@@ -113,7 +113,7 @@ switch(myDay) {
             pic: "images/bubble-tea.jpg",
             alt: "A bubble-tea latte in a white ceramic cup,.",
             color: "silver",
-            desc: `.<br>We know, it's an unusual one! But we find the bubble-tea latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried lavender, this one's a shop favorite.`,
+            desc: `.<br>We know, it's an unusual one! But we find the bubble-tea latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried milk, this one's a shop favorite.`,
             day: "Saturday"
         };
         break;
