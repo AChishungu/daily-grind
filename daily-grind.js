@@ -37,10 +37,10 @@ switch(myDay) {
     case 0:
         today = "Sunday";
         coffee = {
-            name: "espresso con panna",
-            pic: "images/panna.jpg",
+            name: "caramel-latte",
+            pic: "images/caramel-latte.jpg",
             alt: "A picture of an espress topped with whipped cream and cinnamon in a white ceramic cup.",
-            color: "#FF7518",
+            color: "#00FFFF",
             desc: `.<br>Brought to you from Italy, the espresso con panna is a simple but delicious drink. Consisting of espresso topped with a small mountain of whipped cream and a dusting of cinnamon, it's a truly decadent, and we know you're going to love it!`,
             day: "Sunday"
         };
