@@ -100,7 +100,7 @@ switch(myDay) {
             name: "cold-brew",
             pic: "images/cold-brew.jpg",
             alt: "A picture of a old-brew, an espresso shot with steamed milk in a small glass cup.",
-            color: "peachpuff",
+            color: "yellow",
             desc: `.<br>Our cold-brew is made with the finest dark roast ground coffee beans, for maximum flavor in your espresso. The steamed milk adds just a touch of sweetness to the shot--if you're an espresso lover, this is the drink for you!`,
             day: "Friday"
         };
@@ -112,7 +112,7 @@ switch(myDay) {
             name: "bubble-tea",
             pic: "images/bubble-tea.jpg",
             alt: "A bubble-tea latte in a white ceramic cup,.",
-            color: "silver",
+            color: "grey",
             desc: `.<br>We know, it's an unusual one! But we find the bubble-tea latte to be a soothing and mellow cup of coffee--perfect for an afternoon drink on a weekend! Made with our homemade lavender simple syrup and sprinkled with a touch of dried milk, this one's a shop favorite.`,
             day: "Saturday"
         };
